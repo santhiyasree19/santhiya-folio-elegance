@@ -11,7 +11,9 @@ import { Section, Reveal } from "./Section";
 import { certifications } from "@/data/portfolio";
 
 export function CertificationSection() {
-  const [expandAll, setExpandAll] = useState(false);
+  const allIds = certifications.map((c) => c.id);
+  const [open, setOpen] = useState<string[]>(["conferences"]);
+  const expandAll = open.length === allIds.length;
 
   return (
     <Section
@@ -24,8 +26,8 @@ export function CertificationSection() {
         <div className="surface-card p-2 sm:p-4">
           <Accordion
             type="multiple"
-            value={expandAll ? certifications.map((c) => c.id) : undefined}
-            defaultValue={["conferences"]}
+            value={open}
+            onValueChange={setOpen}
             className="w-full"
           >
             {certifications.map((group) => (
