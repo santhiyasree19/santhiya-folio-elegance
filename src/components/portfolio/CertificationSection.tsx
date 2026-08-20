@@ -58,7 +58,7 @@ export function CertificationSection() {
         <Button
           variant="outline"
           className="rounded-full bg-card"
-          onClick={() => setExpandAll((v) => !v)}
+          onClick={() => setOpen(expandAll ? [] : allIds)}
         >
           {expandAll ? "Collapse Certifications" : "View All Certifications"}
         </Button>
