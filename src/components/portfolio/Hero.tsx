@@ -1,7 +1,7 @@
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { profile, techBadges } from "@/data/portfolio";
-import profileImage from "@/assets/profile-placeholder.jpg";
+import profileImage from "@/assets/santhiya-profile.jpg.asset.json";
 
 const badgePositions = [
   "left-[-6%] top-[8%]",
@@ -81,8 +81,8 @@ export function Hero() {
         <div className="relative mx-auto w-full max-w-sm">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[42%_58%_46%_54%/48%_42%_58%_52%] border border-border bg-card shadow-[var(--shadow-lift)]">
             <img
-              src={profileImage}
-              alt="Portrait placeholder for Santhiya Sree S"
+              src={profileImage.url}
+              alt="Santhiya Sree S — professional profile photo"
               width={900}
               height={1100}
               className="h-full w-full object-cover"
