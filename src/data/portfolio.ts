@@ -11,7 +11,7 @@ export const profile = {
   email: "sakthilakshmi4345@gmail.com",
   github: "https://github.com/santhiyasree19",
   linkedin: "https://www.linkedin.com/in/santhiyasree",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/__l5e/assets-v1/6e67d839-bc85-43e5-b588-312cd91d66f1/SANTHIYA_RESUME.pdf",
 };
 
 export const navLinks = [
